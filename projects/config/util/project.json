@@ -1,0 +1,26 @@
+{
+	"name": "config-util",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"projectType": "library",
+	"sourceRoot": "projects/config/util/src",
+	"prefix": "config-util-helpers",
+	"targets": {
+		"build": {
+			"executor": "@nx/angular:ng-packagr-lite",
+			"outputs": ["{workspaceRoot}/dist/projects/config/util"],
+			"options": {
+				"project": "projects/config/util/ng-package.json"
+			},
+			"configurations": {
+				"production": {
+					"tsConfig": "projects/config/util/tsconfig.lib.prod.json"
+				},
+				"development": {
+					"tsConfig": "projects/config/util/tsconfig.lib.json"
+				}
+			},
+			"defaultConfiguration": "production"
+		}
+	},
+	"tags": []
+}

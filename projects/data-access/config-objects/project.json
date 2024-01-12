@@ -1,0 +1,26 @@
+{
+	"name": "data-access-config-objects",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"projectType": "library",
+	"sourceRoot": "projects/data-access/config-objects/src",
+	"prefix": "data-access-config-objects",
+	"targets": {
+		"build": {
+			"executor": "@nx/angular:ng-packagr-lite",
+			"outputs": ["{workspaceRoot}/dist/projects/data-access/config-objects"],
+			"options": {
+				"project": "projects/data-access/config-objects/ng-package.json"
+			},
+			"configurations": {
+				"production": {
+					"tsConfig": "projects/data-access/config-objects/tsconfig.lib.prod.json"
+				},
+				"development": {
+					"tsConfig": "projects/data-access/config-objects/tsconfig.lib.json"
+				}
+			},
+			"defaultConfiguration": "production"
+		}
+	},
+	"tags": []
+}

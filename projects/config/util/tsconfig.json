@@ -1,0 +1,33 @@
+{
+	"extends": "../../../tsconfig.base.json",
+	"files": [],
+	"include": [],
+	"references": [
+		{
+			"path": "./tsconfig.lib.json"
+		},
+		{
+			"path": "./tsconfig.spec.json"
+		}
+	],
+	"compilerOptions": {
+		"target": "es2020",
+		"forceConsistentCasingInFileNames": true,
+		"strict": false,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": false,
+		"noImplicitReturns": false,
+		"noFallthroughCasesInSwitch": false,
+		"strictNullChecks": false,
+		"noImplicitAny": false,
+		"suppressImplicitAnyIndexErrors": true,
+		"ignoreDeprecations": "5.0",
+		"noImplicitThis": true
+	},
+	"angularCompilerOptions": {
+		"enableI18nLegacyMessageIdFormat": false,
+		"strictInjectionParameters": true,
+		"strictInputAccessModifiers": true,
+		"strictTemplates": true
+	}
+}

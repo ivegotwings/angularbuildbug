@@ -1,0 +1,15 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outDir": "../../../dist/out-tsc",
+		"types": ["jasmine", "node"],
+		"strictNullChecks": false,
+		"noImplicitAny": false,
+		"noImplicitReturns": false,
+		"noPropertyAccessFromIndexSignature": false,
+		"target": "ES2022",
+		"useDefineForClassFields": false
+	},
+	"files": ["src/test.ts"],
+	"include": ["**/*.spec.ts", "**/*.test.ts", "**/*.d.ts"]
+}
